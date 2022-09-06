@@ -162,7 +162,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
         image: await(await fetch(axs)).buffer(),
         caption: text.trim(),
         buttons: [
-          {buttonId: `.owner`, buttonText: {displayText: '🙍OWNER'}, type: "RESPONSE"},
+          {buttonId: `.info`, buttonText: {displayText: '❕INFO'}, type: "RESPONSE"},
           {buttonId: `.donasi`, buttonText: {displayText: 'DONASI💰'}, type: "RESPONSE"}
         ],
         headerType: 'IMAGE'
