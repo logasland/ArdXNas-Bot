@@ -158,13 +158,13 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     conn.sendMessage(m.chat, {
-        video: fs.readFileSync('./media/VID-20220907-WA0030.mp4'),
+        image: fs.readFileSync('./media/IMG-20220907-WA0088.jpg'),
         caption: text.trim(),
         buttons: [
           {buttonId: `.info`, buttonText: {displayText: '❕INFO'}, type: "RESPONSE"},
           {buttonId: `.diamond`, buttonText: {displayText: 'DIAMOND💎'}, type: "RESPONSE"}
         ],
-        headerType: 'VIDEO'
+        headerType: 'IMAGE'
    }, {quoted: m, ephemeralExpiration:86400})
 //    conn.sendButton(m.chat, text.trim(), 'Made with ♡ by Aine', null, [['Donasi', '.donasi'],['Owner', '.owner']], m)
     /*conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://aiinne.github.io/', 'Website', '', '', [
