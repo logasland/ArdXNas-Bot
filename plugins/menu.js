@@ -157,15 +157,14 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    let axs = 'https://api-axs.herokuapp.com/api/textpro/glitch?text=ArdXNas-Bot'
     conn.sendMessage(m.chat, {
-        image: await(await fetch(axs)).buffer(),
+        video: fs.readFileSync('./media/VID-20220907-WA0030.mp4'),
         caption: text.trim(),
         buttons: [
           {buttonId: `.info`, buttonText: {displayText: '❕INFO'}, type: "RESPONSE"},
-          {buttonId: `.donasi`, buttonText: {displayText: 'DONASI💰'}, type: "RESPONSE"}
+          {buttonId: `.diamond`, buttonText: {displayText: 'DIAMOND💎'}, type: "RESPONSE"}
         ],
-        headerType: 'IMAGE'
+        headerType: 'VIDEO'
    }, {quoted: m, ephemeralExpiration:86400})
 //    conn.sendButton(m.chat, text.trim(), 'Made with ♡ by Aine', null, [['Donasi', '.donasi'],['Owner', '.owner']], m)
     /*conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://aiinne.github.io/', 'Website', '', '', [
