@@ -2,6 +2,7 @@ let fs = require('fs')
 let chalk = require('chalk')
 
 owner = [
+  ['14165058090'],
   ['6288220924312'],
   ['6288294052009'],
   ['6288220924312', 'Owner', true]
