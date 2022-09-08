@@ -7,7 +7,8 @@ let handler = async (m, { conn, participants }) => {
         let member = participants.map(u => u.id)
         who = member[Math.floor(Math.random() * member.length)]
     }
-    m.reply(`@${who.split`@`[0]}`)
+   conn.sendButton(m.chat, `@${who.split`@`[0]}`, wm, null, [['Bantuan', '.who']], m)
+//    m.reply(`@${who.split`@`[0]}`)
 }
 handler.help = ['', 'kah'].map(v => 'siapa' + v + ' <teks>')
 handler.tags = ['kerang']
