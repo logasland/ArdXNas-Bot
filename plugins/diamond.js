@@ -24,8 +24,8 @@ conn.sendMessage(m.chat, {
         image: await(await fetch(thumb)).buffer(),
         caption: ArdXNasBot,
         buttons: [
-          {buttonId: `.dmml`, buttonText: {displayText: '💎DIAMOND ML'}, type: "RESPONSE"},
-          {buttonId: `.dmff`, buttonText: {displayText: 'DIAMOND FF💎'}, type: "RESPONSE"}
+          {buttonId: `.dmml`, buttonText: {displayText: '💎DIAMOND ML💎'}, type: "RESPONSE"},
+          {buttonId: `.dmff`, buttonText: {displayText: '💎DIAMOND FF💎'}, type: "RESPONSE"}
         ],
         headerType: 'IMAGE'
   }, { quoted: m })
