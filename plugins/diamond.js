@@ -32,6 +32,6 @@ conn.sendMessage(m.chat, {
 }
 handler.help = ['diamond']
 handler.tags = ['main']
-handler.command = /^diamond|dm|pulsa(game|games)$/i
+handler.command = /^(diamond|diamondgame)$/i
 
 module.exports = handler
