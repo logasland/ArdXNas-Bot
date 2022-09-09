@@ -1,7 +1,7 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn }) => {
 let thumb = 'https://telegra.ph/file/a75f1fae1fe7232b317d3.jpg'
-let ArdXNasBot = `Hai ${ucapan} *NaRaa SHOP* 💕 dsni :D
+let ArdXNasBot = `Hai ${ucapan()} *NaRaa SHOP* 💕 dsni :D
 
 *Top UP All Game Aman terpercaya*
 *Tersedia diamond game Lengkap*
@@ -27,7 +27,6 @@ handler.command = /^diamond|pulsa(game|ml|freefire)$/i
 
 module.exports = handler
 
-}
 
 function ucapan() {
         const hour_now = moment.tz('Asia/Jakarta').format('HH')
