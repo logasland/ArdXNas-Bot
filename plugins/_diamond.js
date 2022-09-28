@@ -1,6 +1,6 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn }) => {
-let name = await conn.getName(m.sender)
+// let name = await conn.getName(m.sender)
 let thumb = 'https://telegra.ph/file/a75f1fae1fe7232b317d3.jpg'
 let ArdXNasBot = `Hai kak ${name}, Aku *NaRaa SHOP* 💕 dsni :D
 
@@ -8,7 +8,7 @@ let ArdXNasBot = `Hai kak ${name}, Aku *NaRaa SHOP* 💕 dsni :D
 *Tersedia diamond game Lengkap*
 
 ╔ TERSEDIA JUGA
-╠ PULSA ALL OPERATOR
+╠ KUOTA ALL OPERATOR
 ╠ TOKEN LISTRIK
 ╚ VOUCHER GAME dll
 ❱ *Menerima Lewat Pembayaran* ❰
@@ -28,7 +28,7 @@ conn.sendMessage(m.chat, {
           {buttonId: `.dmff`, buttonText: {displayText: '💎DIAMOND FF💎'}, type: "RESPONSE"}
         ],
         headerType: 'IMAGE'
-  }, { quoted: m })
+  }
 }
 handler.customPrefix = /(pm|Slot|OPM|Stock|Ragu|MINAT)/i
 handler.command = new RegExp
