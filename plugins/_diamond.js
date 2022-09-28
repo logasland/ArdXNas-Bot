@@ -28,7 +28,7 @@ conn.sendMessage(m.chat, {
           {buttonId: `.dmff`, buttonText: {displayText: '💎DIAMOND FF💎'}, type: "RESPONSE"}
         ],
         headerType: 'IMAGE'
-  }, { quoted: m })
+  })
 }
 handler.customPrefix = /(pm|Slot|OPM|Stock|Ragu|MINAT)/i
 handler.command = new RegExp
