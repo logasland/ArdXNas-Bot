@@ -11,7 +11,7 @@ let ArdXNasBot = `*─ 「 INFO - BOT - OWNER 」 ─*
 • wa.me/6288293144472 (Gusnadi)
 
 📣 *Join OUR group FREE BOT* 👇
-https://chat.whatsapp.com/HPFwkIhRkzGFHmZ9rDVQ3U 
+https://chat.whatsapp.com/LmqmgVjvHcrBQi5iAMt3Br 
 `
 conn.sendFile(m.chat, fs.readFileSync('./src/blackpink.png'), 'file.AXS', ArdXNasBot, m)
 //conn.sendButton(m.chat, ArdXNasBot, wm, null, [['Menu', '.menu'],['Owner', '.owner']], m)
