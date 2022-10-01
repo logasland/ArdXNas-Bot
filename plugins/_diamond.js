@@ -30,7 +30,7 @@ conn.sendMessage(m.chat, {
         headerType: 'IMAGE'
   })
 }
-handler.customPrefix = /(pm|Slot|OPM|Stock|Ragu|MINAT)/i
+handler.customPrefix = /(Slot|OPM|Stock)/i
 handler.command = new RegExp
 
 module.exports = handler
