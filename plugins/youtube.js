@@ -11,9 +11,7 @@ conn.sendMessage(m.chat, {
         buttons: [
           {buttonId: `.get ${json.result[0].download}`, buttonText: {displayText: `${json.result[0].quality} (${json.result[0].filesizeMB})`}, type: "RESPONSE"},
         ],
-
         headerType: 'IMAGE'
-
   }, { quoted: m })
 }
 handler.help = ['youtube'].map(v => v + ' <url>')
